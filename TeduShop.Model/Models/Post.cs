@@ -22,8 +22,8 @@ namespace TeduShop.Model.Models
         [Column(TypeName = "varchar")] // Chi ro kieu varchar
         public string Alias { set; get; }
 
-        [Required] s
-        public int CategoryID { set; get; }
+        [Required] 
+        public int CategoryID { get; set; }
 
         [MaxLength(256)]
         public string Image { set; get; }
@@ -42,4 +42,4 @@ namespace TeduShop.Model.Models
 
         public virtual IEnumerable<PostTag> PostTags { set; get; }
     }
-}s
+}
